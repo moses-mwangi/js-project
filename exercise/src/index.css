@@ -47,4 +47,14 @@ p {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 5px;
+  text-align: center;
+}
+.cor {
+  width: max-content;
+  padding: 0 6px 0 6px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+  border-radius: 5px;
 }

@@ -35,23 +35,21 @@ function Text(props) {
 
 function SkillList() {
   return (
-    <div>
-      <Skill skill="" />;
-      <Skill skill="" />;
-      <Skill skill="" />;
-      <Skill skill="" />;
-      <Skill skill="" />;
+    <div className="course">
+      <Skill skill="react" emoji="moooji" color="red" />
+      <Skill skill="javascript" emoji="don" color="blue" />
+      <Skill skill="Html + css" emoji="lov" color="yellow" />
+      <Skill skill="Angular" emoji="face" color="orange" />
+      <Skill skill="NEXT.js" color="purple" />
     </div>
   );
 }
-function Skill() {
+function Skill(props) {
   return (
-    <div className="course">
-      <span>javascript</span>
-      <span>css</span>
-      <span>httml</span>
-      <span>rect</span>
-      <span>Angular</span>
+    <div className="cor" style={{ backgroundColor: props.color }}>
+      {" "}
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
     </div>
   );
 }
