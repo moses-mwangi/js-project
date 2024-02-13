@@ -22,7 +22,7 @@ code {
   display: block;
 }
 .text-cont {
-  width: 320px;
+  width: 360px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ p {
   color: #555;
 }
 .course {
-  width: 320px;
+  width: 355px;
   height: auto;
   margin: auto;
   font-size: 20px;
@@ -57,4 +57,26 @@ p {
   display: flex;
   gap: 5px;
   border-radius: 5px;
+  background-color: yellow;
+}
+
+.conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 3px;
+}
+.spa {
+  font-size: 16px;
+  border: 1px solid #333;
+  width: 13px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

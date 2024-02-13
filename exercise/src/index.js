@@ -1,8 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from "./App";
+import Exer from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+const skills = [
+  { skill: "HTML+CSS", level: "adv", color: "#2662ea", key: 1 },
+  { skill: "javascript", level: "begg", color: "#efd81d", key: 2 },
+  { skill: "Web design", level: "adv", color: "#c3dcaf", key: 3 },
+  { skill: "Git and Github", level: "inter", color: "#2672ea", key: 4 },
+  { skill: "React", level: "adv", color: "#e84f33", key: 5 },
+  { skill: "Angular", level: "inter", color: "#60dafb", key: 6 },
+  { skill: "Tailwind", level: "adv", color: "#ff3b00", key: 7 },
+];
 
 function App() {
   return (
@@ -36,20 +46,27 @@ function Text(props) {
 function SkillList() {
   return (
     <div className="course">
-      <Skill skill="react" emoji="moooji" color="red" />
-      <Skill skill="javascript" emoji="don" color="blue" />
-      <Skill skill="Html + css" emoji="lov" color="yellow" />
-      <Skill skill="Angular" emoji="face" color="orange" />
-      <Skill skill="NEXT.js" color="purple" />
+      {skills.map((skill) => (
+        <Skill skillOb={skill} key={skill.color} />
+      ))}
+      ;
     </div>
   );
+  // <div className="course">
+
+  //   <Skill skill="react" emoji="moooji" color="red" />
+  //   <Skill skill="javascript" emoji="don" color="blue" />
+  //   <Skill skill="Html + css" emoji="lov" color="yellow" />
+  //   <Skill skill="Angular" emoji="face" color="orange" />
+  //   <Skill skill="NEXT.js" color="purple" />
+  // </div>
 }
-function Skill(props) {
+function Skill({ skillOb }) {
   return (
-    <div className="cor" style={{ backgroundColor: props.color }}>
+    <div className="cor " style={{ backgroundColor: skillOb.color }}>
       {" "}
-      <span>{props.skill}</span>
-      <span>{props.emoji}</span>
+      <span>{skillOb.skill}</span>
+      <span>{skillOb.level}</span>
     </div>
   );
 }
@@ -59,7 +76,12 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
+const exer = ReactDOM.createRoot(document.getElementById("exer"));
+exer.render(
+  <React.StrictMode>
+    <Exer />
+  </React.StrictMode>
+);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
