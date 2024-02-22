@@ -57,7 +57,9 @@ body {
   overflow-y: scroll;
   position: relative;
 }
-
+.box::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 .loader {
   text-align: center;
   text-transform: uppercase;
