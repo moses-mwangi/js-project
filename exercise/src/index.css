@@ -6,77 +6,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-.container {
-  border: 4px solid #333;
-  margin: 30px 0 0 30px;
-  width: 400px;
-}
-.image {
-  width: 100%;
-  margin-bottom: 15px;
-  display: block;
-}
-.text-cont {
+form {
   width: 360px;
   margin: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-h1 {
-  margin-bottom: 0;
-  color: #333;
-}
-p {
-  letter-spacing: 0.5px;
-  line-height: 1.2;
-  color: #555;
-}
-.course {
-  width: 355px;
-  height: auto;
-  margin: auto;
-  font-size: 20px;
-  margin-bottom: 15px;
-
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 5px;
-  text-align: center;
-}
-.cor {
-  width: max-content;
-  padding: 0 6px 0 6px;
-  align-items: center;
   justify-content: center;
-  display: flex;
-  gap: 5px;
-  border-radius: 5px;
-  background-color: yellow;
+  gap: 1rem;
 }
-
-.conta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.row {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 3px;
-}
-.spa {
-  font-size: 16px;
-  border: 1px solid #333;
-  width: 13px;
-  height: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+form input {
+  font-size: 22px;
 }
